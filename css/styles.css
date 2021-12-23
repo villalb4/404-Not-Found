@@ -9,84 +9,109 @@ body {
   font-family: "space mono";
 }
 main {
-  margin-left: 77px;
 }
- section {
+section {
   display: flex;
-  margin-top: 80px;
-  grid-gap: 120px;
-}
-h2 {
-  font-family: "Inconsolata";
-  color: #333333;
-  font-size: 1.5em;
-  font-weight: 700;
-  letter-spacing: -0.08em;
-  margin: 40px 0 0 0;
-}
-.Scarecrow {
-  height: 27.964em;
-  width: 33.701em;
+  margin: 200px 77px 308px 77px;
+  gap: 119.78px;
 }
 h1 {
+  margin: 40px 0 0 77px;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.08em;
   color: #333333;
+}
+.scarecrow {
+  height: 447.5px;
+  width: 539.22px;
+}
+h2 {
+  font-weight: 700;
   font-size: 64px;
   letter-spacing: -0.035em;
+  color: #333333;
   margin-bottom: 36px;
-  max-width: 586px;
 }
-p{
-  color: #4F4F4F;
+.text {
   font-size: 24px;
+  line-height: 36px;
   letter-spacing: -0.035em;
-  margin-bottom: 64px;
-  max-width: 381px;
+  width: 381px;
+  margin-bottom: 88px;
+  color:#4F4F4F;
 }
+
 input {
-  padding: 24px 43px;
-  font-family: "space mono";
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  font-family: "Space Mono";
   letter-spacing: -0.035em;
   color: white;
   background-color: #333333;
   border: none;
+  padding: 24px 43px;
   cursor: pointer;
 }
-@media (max-width: 1000px) {
-  main {
-    margin: 0 48px;
-  }
-  section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  h2 {
-    margin-top: 40px;
-    font-size: 3.8em;
-    font-weight: 700;
-  }
-  .Scarecrow {
-    margin-top: 109px;
-    height: 37.964em;
-    width: 43.701em;
-  }
-  div {
+input:hover {
+  background-color: #222222;
+}
+.footer {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #BDBDBD;
+}
+a {
+  color: #6a6a6a;
+  font-weight: 700;
+  text-decoration: none;
+}
 
-  }
-  h1 {
-    margin: 0 0 80px 0;
-    font-size: 124px;
-    max-width: none;
-  }
-  p{
-    margin:0 0 168px 0;
-    font-size: 35px;
-    max-width: none;
-  }
-  input {
-    font-size: 38px;
-    padding: 68px 115px;
+/*media queries*/
+@media (max-width: 1366px) {
+  section {
+    margin: 200px 40px 308px 40px;
+    gap: 50px;
   }
 }
+
+ @media (max-width: 984px) {
+  section {
+    margin: 200px 24px 308px 24px;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    margin: 40px 44px;
+    font-size: 65px;
+  }
+  .scarecrow {
+    height: 647.5px;
+    width: 739.22px;
+    margin-bottom: 120px;
+  }
+  h2 {
+    font-size: 124px;
+    margin: 0 35px 60px 35px;
+  }
+  .text {
+    font-size: 37px;
+    margin: 0 0 132px 35px;
+    width: 881px;
+    font-weight: normal;
+    line-height: 60px;
+    letter-spacing: -0.035em;
+    margin-bottom: 132px;
+    }
+    input {
+      margin-left: 35px;
+      font-size: 38px;
+      padding: 65px 108px;
+    }
+    .footer {
+      font-size: 30px;
+      margin-bottom: 48px;
+    }
+  }
