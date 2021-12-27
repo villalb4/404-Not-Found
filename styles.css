@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono";
+}
+h1 {
+  font-size: 1.5rem;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: -0.08em;
+  color: #333333;
+  margin:40px 0 0 77px;
+}
+section {
+  display: flex;
+  gap: 119px;
+  margin: 200px 77px 326.57px 77px;
+}
+img {
+  height: 447.43px;
+  width: 539.22px;
+}
+h2 {
+  font-family: "space mono";
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 95px;
+  color: #333333;
+  margin-bottom: 33px;
+}
+.error {
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  width: 380px;
+  margin-bottom: 64px;
+}
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #bdbdbd;
+  margin-bottom: 24px;
+}
+a {
+  font-weight: 700;
+  color: #bcbcbc;
+}
+input {
+  font-family: "space mono";
+  font-size: 0.875rem;
+  letter-spacing: -0.035em;
+  color: white;
+  padding: 24px 43px 23px 43px;
+  background-color: #333333;
+  border-style: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1259px) {
+  section {
+    gap: 59.5px;
+    margin: 200px 38.5px 326.57px 38.5px;
+  }
+  h1 {
+    margin:40px 0 0 38.5px;
+  }
+  h2 {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  img {
+    height: 350px;
+    width: 430px;
+  }
+  h2 {
+    font-size: 56px;
+    line-height: 72.935px;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  section {
+    justify-content: center;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    width: 350px;
+  }
+  img {
+    height: 238px;
+    width: 286.83px;
+  }
+  .error {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 774px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section{
+    flex-direction: column;
+    margin: 64px 0 114px 0;
+    gap: 60px;
+    align-items: center;
+  }
+  h1 {
+    margin: 20px 0 0 24px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin: 0 0 30px 24px;
+  }
+  img {
+    height: 238px;
+    width: 286.83px;
+  }
+  .error {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    width: 300px;
+    margin: 0 0 66px 24px;
+  }
+  input {
+    margin: 0 0 0 24px;
+  }
+}
